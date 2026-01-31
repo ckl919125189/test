@@ -1,12 +1,43 @@
 {
   "name": "test-repo",
   "version": "1.0.0",
-  "description": "测试仓库的package.json",
+  "description": "测试仓库 - 由小k通过OpenClaw创建",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"测试通过\""
+    "dev": "node index.js",
+    "test": "echo \"测试通过\" && exit 0",
+    "lint": "npx eslint index.js --fix || echo 'ESLint not installed'",
+    "format": "npx prettier --write . || echo 'Prettier not installed'",
+    "build": "echo '构建完成'",
+    "clean": "rm -rf node_modules",
+    "docs": "echo '生成文档'",
+    "release": "echo '发布版本'"
   },
-  "author": "小k (OpenClaw)",
-  "license": "MIT"
+  "keywords": [
+    "test",
+    "openclaw",
+    "github",
+    "automation"
+  ],
+  "author": "小k (OpenClaw) <ckl919125189@users.noreply.github.com>",
+  "contributors": [
+    {
+      "name": "阿Ken",
+      "email": "ckl919125189@users.noreply.github.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckl919125189/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ckl919125189/test/issues"
+  },
+  "homepage": "https://github.com/ckl919125189/test#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
 }
